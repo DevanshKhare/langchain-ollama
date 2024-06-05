@@ -8,6 +8,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+prompt = ChatPromptTemplate.from_messages([
+    ("system", "You are a helpful assistant. Please respond to the user queries"),
+    ("user", "Question:{question}")
+])
 
 st.title("AI Sensing")
 input_text = st.text_input("Search the topic you want")
