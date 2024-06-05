@@ -18,3 +18,4 @@ input_text = st.text_input("Search the topic you want")
 
 #Ollama
 llm=Ollama(model="gpt-3.5-turbo")
+chain=prompt|llm
